@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+#include<stdlib.h>
+int main() {
+    
+  int aptitude,logicalreasoning,debugging,programming;
+  printf("aptitude");
+  scanf("%d",&aptitude);
+  printf("logicalreasoning");
+  scanf("%d",&logicalreasoning);
+  printf("debugging");
+  scanf("%d",&debugging);
+  printf("programming");
+  scanf("%d",&programming);
+
+ int score=(aptitude+logicalreasoning+debugging+programming);
+  printf("total score :%d",score);
+  return 0;
+}
