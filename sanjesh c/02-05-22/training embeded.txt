@@ -1,2 +1,2 @@
-training embeded
+ining embeded
 using c programing
