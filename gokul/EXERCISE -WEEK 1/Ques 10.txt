@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{ 
+    int a[50];
+    int b[50];
+    int k,l,m,n,i,j;
+    
+    printf("enter the 2 integers that corresponds to the range of first variable");
+    scanf("%d%d",&k,&l);
+    printf("enter the 2 integers that corresponds to the range of second variable");
+    scanf("%d%d",&m,&n);
+    if(l>=k){
+        a[i]=(l-k)+1;
+        printf("number of values are:%d\n",a[i]);
+    }
+    else{
+        a[i]=(k-l)+1;
+        printf("number of values are:%d\n",a[i]);
+    }
+    if(n>=m){
+        b[j]=(n-m)+1;
+        printf("number of values are:%d\n",b[j]);
+    }
+    else{
+        b[j]=(m-n)+1;
+        printf("number of values are:%d\n",b[j]);
+        
+    }
+    
+   printf("total number of unique questions are:%d\n",a[i]*b[j]);
+   
+    return 0;
+}

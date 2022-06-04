@@ -1,0 +1,10 @@
+Index: 01-06-2022/exercise.txt
+===================================================================
+--- 01-06-2022/exercise.txt	(revision 35)
++++ 01-06-2022/exercise.txt	(working copy)
+@@ -1 +1,2 @@
+-todays exercise
+\ No newline at end of file
++todays exercise
++hello
+\ No newline at end of file

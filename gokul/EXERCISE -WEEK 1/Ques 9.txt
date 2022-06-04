@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int x,a,prg,debug,lr;
+   printf("enter the total value\n");
+   scanf("%d",&x);
+   
+   a=(x-50)/6;
+   debug=20+a;
+   lr=debug-5;
+   prg=lr+(2*a);
+   
+   printf("---------------------------\n");
+   printf("value of aptitude is:%d\n",a);
+   printf("value of programming is:%d\n",prg);
+   printf("value of logical reasoning  is:%d\n",lr);
+   printf("value of debuging is:%d\n",debug);
+   
+   
+    return 0;
+}

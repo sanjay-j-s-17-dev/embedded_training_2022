@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int b,g;
+    printf("enter number of boys\n");
+    scanf("%d",&b);
+    
+    g=(b-2)/3;
+    
+    printf("number of girls are:%d",g);
+
+    return 0;
+}
