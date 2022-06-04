@@ -2,45 +2,51 @@
 #include<stdlib.h>
 int main()
 {
-float total,obtained;
+float t,t1,t2,t3,ob1,ob2,ob3,ob4;
+
+
     printf("Aptitude:\n");
     printf("total");
-    scanf("%f",&total);
+    scanf("%f",&t);
     printf("obtained");
-    scanf("%f",&obtained);
-    float c=obtained/total;
-     float d=c*100;
-     printf("%f",d);
+    scanf("%f",&ob1);
+    float c=ob1/t;
+    
+    
     printf("logicalreasoning:\n");
     printf("total");
-    scanf("%f",&total);
+    scanf("%f",&t1);
     printf("obtained");
+    scanf("%f",&ob2);
+    float a =ob2/t1;
     
-    scanf("%f",&obtained);
-    float a =obtained/total;
+    
     printf("Debugging:\n");
     printf("total");
-    scanf("%f",&total);
+    scanf("%f",&t2);
     printf("obtained");
+    scanf("%f",&ob3);
+    float b =ob3/t2;
     
-    scanf("%f",&obtained);
-    float b =obtained/total;
+    
     printf("programming:\n");
     printf("total");
-    scanf("%f",&total);
+    scanf("%f",&t3);
     printf("obtained");
-    scanf("%f",&obtained);
-    float e =obtained/total;
+    scanf("%f",&ob4);
+    float e =ob4/t3;
     
-    float sum1=obtained+obtained+obtained+obtained;
-    float sum=total+total+total+total;
+    float sum1=ob1+ob2+ob3+ob4;
+    float sum=t+t1+t2+t3;
     float overall=sum1/sum;
     
     printf("----------------\n");
-    printf("Aptitude %% is :%f \n",d);
+
+    printf("Aptitude %% is :%f \n",c*100);
     printf("Logical reasoning %% is:%f \n",a*100);
     printf("Debugging %% is:%f \n",b*100);
     printf("Programming %% is:%f \n",e*100);
+
     printf("Overall %% is:%f \n",overall*100);
     
     return 0;
