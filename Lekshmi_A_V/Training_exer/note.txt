@@ -1,1 +1,2 @@
-Training exercise commit
+Training exercise commit.
+
