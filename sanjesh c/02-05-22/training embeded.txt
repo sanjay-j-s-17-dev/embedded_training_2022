@@ -1,2 +1,3 @@
-ining embeded
+training embbeded
 using c programing
+codes blocks
