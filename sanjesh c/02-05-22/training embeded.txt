@@ -3,3 +3,5 @@ using c programing
 codes blocks
 svn 
 print enter the number
+scanf the number 
+capacity of candidates
