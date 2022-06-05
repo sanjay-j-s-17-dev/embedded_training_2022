@@ -1,7 +1,6 @@
 training embbeded
 using c programing
 codes blocks
-svn 
-print enter the number
+software svn 
 scanf the number 
 capacity of candidates
