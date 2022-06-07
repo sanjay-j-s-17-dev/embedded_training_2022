@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    int i,capacity;
+    char name[50],venue[50],date[50];
+    float time;
+    char ch='-';
+    printf("\n WELCOME TO ONLINE EXAM \n");
+    printf("Name\n");
+    gets(name);
+    printf("Venue\n");
+    gets(venue);
+    printf("capacity\n");
+    scanf("%d",&capacity);
+    printf("Date\n");
+    gets(date);
+    gets(date);
+    printf("time\n");
+    scanf("%f",&time);
+    for(i=0;i<strlen(date);i++)
+    {
+        if(date[i]==' ')
+        {
+            date[i]=ch;
+        }
+    }
+
+printf("%s is conducting %s exam on %s at %.2f hrs and the number of entries are limited to %d  ",venue,name,date,time,capacity);
+}
