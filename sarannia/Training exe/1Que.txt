@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   char name[50],topic[50];
+   int durtn,marks;
+
+   printf("Welcome To Online Exam\n");
+   printf("Name\n");
+   scanf("%[^\n]",name);
+   printf("Topic\n");
+   scanf("%[^\n]",topic);
+   printf("Duration\n");
+   scanf("%d",&durtn);
+   scanf("Marks\n");
+   scanf("%d",&marks);
+   printf("%s is a %s exam for %d marks and the duration is %d mins",name,topic,marks,durtn);
+   return 0;
+}
