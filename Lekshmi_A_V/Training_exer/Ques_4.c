@@ -27,10 +27,10 @@ int main(){
     per4=(int)obt4/(float)tot4*100;
     overall=(per1+per2+per3+per4)/4;
 
-    printf("Aptitude is %2f",per1);
-     printf("\nLogical Reasoning is %2f",per2);
-      printf("\nDebugging is %2f",per3);
-       printf("\nProgramming is %2f",per4);
-        printf("\nOverall is %2f",overall);
+    printf("Aptitude is %.2f",per1);
+     printf("\nLogical Reasoning is %.2f",per2);
+      printf("\nDebugging is %.2f",per3);
+       printf("\nProgramming is %.2f",per4);
+        printf("\nOverall is %.2f",overall);
 return 0;
 }

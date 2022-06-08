@@ -23,7 +23,7 @@ int main(){
       tot_weig=(w1+w2+w3+w4)/100;
 
       printf("\nTotal original score out of 120 : %d",tot_org);
-      printf("\nTotal weighted score out of 120 : %f",tot_weig);
+      printf("\nTotal weighted score out of 120 : %.2f",tot_weig);
 
 return 0;
 }
