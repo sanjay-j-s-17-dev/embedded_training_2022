@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int Aptitude,Logical_Reasoning,Debugging,Programming,Total;
+    printf("Aptitude/n");
+    scanf("%d",&Aptitude);
+    printf("Logical_Reasoning/n");
+    scanf("%d",&Logical_Reasoning);
+    printf("Debugging/n");
+    scanf("%d",&Debugging);
+    printf("Programming/n");
+    scanf("%d",&Programming);
+    Total=Aptitude+Logical_Reasoning+Debugging+Programming;
+    printf("Total score is %d",Total);
+    return 0;
+}
