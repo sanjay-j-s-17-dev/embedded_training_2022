@@ -1,0 +1,11 @@
+int main()
+{
+    int a,l,d,p,t;
+    scanf("%d",&t);
+    a=(t-50)/6;
+    d=20+a;
+    l=d-5;
+    p=l+(2*a);
+    printf("%d,%d,%d,%d",a,d,l,p);
+    return 0;
+}
