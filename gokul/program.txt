@@ -1,0 +1,104 @@
+1)stringizing operator 
+
+#define name(s) #s
+int main()
+{
+    printf(name(gokul));
+}
+
+2)call back function
+
+int addition(int x , int y);
+int substraction(int x, int y);
+void(*fun_ptr)(int,int);
+int main()
+{
+    int a,b,value;
+printf("enter two numbers\n");
+scanf("%d%d",&a,&b);
+printf("enter value : 1 for addition \n 2 for substraction\n");
+scanf("%d",&value);
+switch(value)
+{
+case 1:
+    fun_ptr=addition;
+    break;
+case 2:
+    fun_ptr = substraction;
+    break;
+}
+fun_ptr(a,b);
+}
+
+int addition(int x,int y)
+{
+    int a=x+y;
+    printf("sum is :%d\n",a);
+}
+int substraction(int x,int y)
+{
+    int a=x-y;
+    printf("value is :%d\n",a);
+}
+
+3)dynamic pointer
+
+int main()
+{
+    int n,*p,i;
+    printf("enter total number of elements");
+    scanf("%d",&n);
+    p=(int *)malloc(n*sizeof(n));
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",p+i);
+    }
+    for(i=0;i<n;i++){
+        printf("value is:%d\n",p[i]);
+    }
+}
+
+4)ascending order
+
+int main()
+{
+    int i,j,num[50],total,temp;
+    printf("enter the total numbers");
+    scanf("%d",&total);
+    printf("enter the numbers");
+    for(i=0;i<total;i++){
+        scanf("%d",&num[i]);
+    }
+    for(i=0;i<total;i++){
+        for(j=i+1;j<total;j++){
+           if(num[i]<num[j]){
+            temp=num[i];
+            num[i]=num[j];
+            num[j]=temp;
+           }
+           }
+printf("%d",num[i]);
+    }
+
+}
+5) factorial using recursion
+
+int factorial(int n)
+{
+   if(n==0){
+    return(1);
+   }
+else{
+        int f=n*factorial(n-1);
+        return f;
+}
+}
+int main()
+{
+    int fact, num;
+    printf("enter the number");
+    scanf("%d",&num);
+     fact=factorial(num);
+
+     printf("factorial is %d",fact);
+}
