@@ -102,3 +102,105 @@ int main()
 
      printf("factorial is %d",fact);
 }
+
+//ascending values using dynamic memory
+int main()
+{
+    int n,*p,i,j,temp;
+    printf("enter the total number of elements");
+    scanf("%d",&n);
+    p=(int *)malloc(n*sizeof(n));
+    for(i=0;i<n;i++){
+        scanf("%d",p+i);
+    }
+
+    printf("the ascending values are:\n");
+
+    for(i=0;i<n;i++)
+    {
+        for(j=i+1;j<n;j++)
+        {
+            if(p[i]>p[j])
+            {
+              temp=p[i];
+              p[i]=p[j];
+              p[j]=temp;
+            }
+        }
+        printf("%d\n",p[i]);
+    }
+}
+
+//without using return
+int add(int *x,int *y)
+{
+    int *c;
+    c=*x+*y;
+}
+
+int main()
+{
+    int a,b,c;
+    printf("enter 2 values for adding");
+    scanf("%d%d",&a,&b);
+    c=add(&a,&b);
+    printf("value is:%d",c);
+}
+
+//concatenation using strcat
+int main()
+{
+    char str1[]="iam";
+    char str2[]="gokul";
+    strcat(str1,str2);
+
+    printf("after concatenation:%s\n",str1);
+}
+
+without string func:
+int main()
+{
+    char str1[20];
+    char str2[20];
+    int i,j,n=0,m=0,l;
+    printf("enter the first string");
+    scanf("%s",&str1);
+    printf("enter the second string");
+    scanf("%s",&str2);
+    for(int i=0;str1[i]!='\0';i++)
+    {
+    n=n+1;
+    }
+
+    for( int i=0;str2[i]!='\0';i++)
+    {
+    m=m+1;
+    }
+    l=m+n;
+    for(i=n;i<l;i++)
+    {
+    j=i-n;
+    str1[i]=str2[j];
+    }
+   for(i=0;i<l;i++)
+   {
+   printf("%c",str1[i]);
+}
+}
+
+structure:
+
+struct class
+{
+    int rollno;
+    float marks;
+}s1;
+
+int main()
+{
+    s1.rollno=10;
+    s1.marks=45.5;
+    printf("roll number is:%d\n",s1.rollno);
+    printf("mark is:%f",s1.marks);
+}
+
